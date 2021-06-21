@@ -28,5 +28,5 @@ class Article < ApplicationRecord
         char_count = self.title.length + self.content.length
         errors.add(:content, 'タイトルと内容の合計が100文字以下です。') unless char_count > 100
     end
-    
+
 end
